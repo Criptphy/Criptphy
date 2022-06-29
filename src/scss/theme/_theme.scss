@@ -1,0 +1,9 @@
+body {
+  background-color: $dark;
+}
+
+.app {
+  &__theme {
+    background-color: $dark-200;
+  }
+}

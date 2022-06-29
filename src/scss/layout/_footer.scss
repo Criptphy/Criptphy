@@ -1,0 +1,71 @@
+footer {
+  @include flex(auto, row, wrap);
+  @include minmax(100%, 10rem);
+  margin-top: 8rem;
+  padding: 0rem 8.5rem 0rem 8.5rem;
+  justify-content: center;
+  background-color: $dark-200;
+
+  @include sm-mobile {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    min-width: 100vw;
+  }
+
+  @include mobile {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  @include tablet {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  @include laptop {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  @include desktop {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  @include lg-desktop {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+}
+
+.footer {
+  &__section {
+    &--right {
+      align-items: end;
+      text-align: end;
+    }
+
+    @include flex(auto, column, wrap);
+    @include minmax(50%, 100%);
+    justify-content: center;
+    gap: 1rem;
+
+    @include sm-mobile {
+      @include minmax(100%, 50%);
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @include mobile {
+      @include minmax(100%, 50%);
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @include tablet {
+      @include minmax(100%, 50%);
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}

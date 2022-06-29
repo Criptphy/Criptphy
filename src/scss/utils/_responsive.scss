@@ -1,0 +1,64 @@
+// variables
+$min-sm-mobile: 200px;
+$max-sm-mobile: 320px;
+
+$min-mobile: 320px;
+$max-mobile: 480px;
+
+$min-tablet: 481px;
+$max-tablet: 768px;
+
+$min-laptop: 769px;
+$max-laptop: 1024px;
+
+$min-desktop: 1025px;
+$max-desktop: 1200px;
+
+$min-lg-desktop: 1201px;
+$max-lg-desktop: 1366px;
+
+$min-bg-desktop: 1366px;
+$max-bg-desktop: 1919px;
+
+// mixins
+@mixin sm-mobile {
+    @media (min-width: #{$min-sm-mobile}) and (max-width: #{$max-sm-mobile}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: #{$min-mobile}) and (max-width: #{$max-mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$min-tablet}) and (max-width: #{$max-tablet}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$min-laptop}) and (max-width: #{$max-laptop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$min-desktop}) and (max-width: #{$max-desktop}) {
+        @content;
+    }
+}
+
+@mixin lg-desktop {
+  @media (min-width: #{$min-lg-desktop}) and (max-width: #{$max-lg-desktop}) {
+      @content;
+  }
+}
+
+@mixin bg-desktop {
+  @media (min-width: #{$min-bg-desktop}) and (max-width: #{$max-bg-desktop}) {
+      @content;
+  }
+}

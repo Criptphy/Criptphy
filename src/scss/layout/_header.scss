@@ -1,0 +1,246 @@
+header {
+  @include flex(auto, column, wrap);
+  height: 100vh;
+}
+
+.header {
+  &__nav {
+    @include flex(auto, row, wrap);
+    margin: 2rem 8.5rem 0rem 8.5rem;
+
+    @include sm-mobile {
+      @include flex(auto, column, nowrap);
+      margin: 2rem 1.5rem 0rem 1.5rem;
+      align-items: center;
+      max-height: 4rem;
+      gap: 1rem;
+    }
+
+    @include mobile {
+      @include flex(auto, column, nowrap);
+      margin: 2rem 1.5rem 0rem 1.5rem;
+      align-items: center;
+      max-height: 4rem;
+      gap: 1rem;
+    }
+
+    @include tablet {
+      @include flex(auto, column, nowrap);
+      margin: 2rem 1.5rem 0rem 1.5rem;
+      align-items: center;
+      max-height: 4rem;
+      gap: 1rem;
+    }
+
+    @include laptop {
+      margin: 2rem 1.5rem 0rem 1.5rem;
+      max-height: 4rem;
+    }
+
+    @include desktop {
+      margin: 2rem 1.5rem 0rem 1.5rem;
+      max-height: 4rem;
+    }
+
+    @include lg-desktop {
+      margin: 2rem 1.5rem 0rem 1.5rem;
+      max-height: 4rem;
+    }
+  }
+
+  &__section {
+    &--left {
+      justify-content: left;
+
+      @include sm-mobile { 
+        a {
+          display: none;
+        }
+      }
+
+      @include mobile { 
+        a {
+          display: none;
+        }
+      }
+
+      @include tablet { 
+        a {
+          display: none;
+        }
+      }
+    }
+
+    &--right {
+      justify-content: right;
+    }
+
+    @include flex(auto, row, wrap);
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  &__hero {
+    @include flex(auto, row, wrap);
+    margin: 2rem 8.5rem 0rem 8.5rem;
+    align-items: center;
+
+    @include sm-mobile {
+      @include flex(auto, column, wrap);
+      margin: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    @include mobile {
+      @include flex(auto, column, wrap);
+      margin: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    @include tablet {
+      @include flex(auto, column, wrap);
+      margin: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    @include laptop {
+      margin: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    @include desktop {
+      margin: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    @include lg-desktop {
+      margin: 1rem 1.5rem 0rem 1.5rem;
+    }
+  }
+
+  &__info {
+    &--img {
+      background-image: url('/logo.avif');
+      background-repeat: no-repeat;
+      background-size: 26.875rem;
+      background-position: top right;
+
+      @include sm-mobile {
+        background-size: 12rem;
+        background-position: center;
+      }
+
+      @include mobile {
+        background-size: 12rem;
+        background-position: center;
+      }
+
+      @include tablet {
+        background-size: 12rem;
+        background-position: center;
+      }
+
+      @include laptop {
+        background-size: 20rem;
+        background-position: center;
+      }
+
+      @include desktop {
+        background-size: 20rem;
+        background-position: center;
+      }
+
+      @include lg-desktop {
+        background-size: 20rem;
+        background-position: center;
+      }
+    }
+
+    @include flex(auto, column, wrap);
+    width: 50%;
+    height: 100%;
+    gap: 3.75rem;
+
+    @include sm-mobile {
+      width: 100%;
+      height: 50%;
+      gap: 0rem;
+      justify-content: center;
+    }
+
+    @include mobile {
+      width: 100%;
+      height: 50%;
+      gap: 0rem;
+      justify-content: center;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: 50%;
+      gap: 0rem;
+      justify-content: center;
+    }
+
+    @include laptop {
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    @include desktop {
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    @include lg-desktop {
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .header__titles {
+      @include flex(auto, column, wrap);
+      max-height: 50vmin;
+      gap: 1.875rem;
+
+      @include sm-mobile {
+        max-height: 9rem;
+        gap: 0rem;
+      }
+
+      @include mobile {
+        max-height: 9rem;
+        gap: 0rem;
+      }
+
+      @include tablet {
+        max-height: 9rem;
+        gap: 0rem;
+      }
+
+      @include laptop {
+        max-height: 9rem;
+        gap: 0rem;
+      }
+
+      @include desktop {
+        max-height: 12rem;
+        gap: 2rem;
+      }
+
+      @include lg-desktop {
+        max-height: 12rem;
+        gap: 2rem;
+      }
+    }
+
+    @include sm-mobile {
+      width: 100%;
+      height: 50%;
+    }
+
+    @include mobile {
+      width: 100%;
+      height: 50%;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: 50%;
+    }
+  }
+}

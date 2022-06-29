@@ -1,0 +1,219 @@
+.modal {
+  &__container {
+    &--enabled {
+      @include flex(auto, column, wrap);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    &--disabled {
+      display: none;
+    }
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+
+    i:hover {
+      cursor: pointer;
+    }
+
+    @include sm-mobile {
+      padding: 1.5rem;
+    }
+
+    @include mobile {
+      padding: 1.5rem;
+    }
+
+    @include tablet {
+      padding: 1.5rem;
+    }
+
+    @include laptop {
+      padding: 1.5rem;
+    }
+  }
+
+  &__popup {
+    &--enabled {
+      @include flex(auto, row, wrap);
+      @include animation(zoomIn, 0.2s);
+
+      @include sm-mobile {
+        @include flex(auto, column, nowrap);
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      };
+
+      @include mobile {
+        @include flex(auto, column, nowrap);
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      };
+
+      @include laptop {
+        @include flex(auto, column, nowrap);
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      };
+    }
+
+    &--disabled {
+      display: none;
+    }
+
+    @include minmax(60rem, 35rem);
+    position: relative;
+    background-color: $dark;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    @include sm-mobile {
+      @include minmax(100%, 100%);
+    }
+
+    @include mobile {
+      @include minmax(100%, 100%);
+    }
+
+    @include tablet {
+      @include minmax(100%, 100%);
+    }
+
+    @include laptop {
+      @include minmax(100%, 100%);
+    }
+
+    @include desktop {
+      @include minmax(50rem, 30rem);
+    }
+
+    @include lg-desktop {
+      @include minmax(50rem, 30rem);
+    }
+
+    .modal__close {
+      @include flex(auto, row, wrap);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .modal__content {
+      &--img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include sm-mobile {
+          display: none;
+        }
+
+        @include mobile {
+          display: none;
+        }
+
+        @include tablet {
+          display: none;
+        }
+
+        @include laptop {
+          display: none;
+        }
+      }
+
+      &--actions {
+        @include minmax(100%, 100%);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+
+        .modal__buttons {
+          @include flex(auto, row, wrap);
+          @include minmax(100%, 4rem);
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+        }
+      }
+
+      @include flex(auto, column, wrap);
+      @include minmax(50%, 100%);
+      border-radius: 1rem;
+      padding: 1rem;
+
+      @include sm-mobile {
+        @include minmax(100%, 100%);
+      }
+
+      @include mobile {
+        @include minmax(100%, 100%);
+      }
+
+      @include tablet {
+        @include minmax(100%, 100%);
+      }
+
+      @include laptop {
+        @include minmax(100%, 100%);
+      }
+
+      form {
+        gap: 1rem;
+      }
+    }
+  }
+
+  &__popupsm {
+    &--enabled {
+      @include flex(auto, column, wrap);
+      @include animation(zoomIn, 0.2s);
+    }
+
+    &--disabled {
+      display: none;
+    }
+
+    @extend .modal__popup;
+    @include minmax(30rem, 30rem);
+
+    @include sm-mobile {
+      @include minmax(100%, 100%);
+    }
+
+    @include mobile {
+      @include minmax(100%, 100%);
+    }
+
+    @include tablet {
+      @include minmax(100%, 100%);
+    }
+
+    @include laptop {
+      @include minmax(100%, 100%);
+    }
+
+    form {
+      // @include minmax(100%, 10rem);
+      width: 100%;
+    }
+  }
+}

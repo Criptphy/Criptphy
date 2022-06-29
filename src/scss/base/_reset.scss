@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  @include flex(auto, column, wrap);
+  // position: absolute;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+}
+
+::selection {
+  background: $blue-active;
+}
+
+// scroll reveal
+.reveal {
+  visibility: hidden;
+}
+
+.fade {
+  visibility: hidden;
+}

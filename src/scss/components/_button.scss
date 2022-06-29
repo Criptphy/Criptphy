@@ -1,0 +1,86 @@
+.button {
+  &__sm {
+    @include flex(auto, row, wrap);
+    @include minmax(10rem, 3rem);
+    border: none;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    transition: background-color 0.3s; 
+    background-color: $blue;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:hover {
+      cursor: pointer;
+      background-color: $blue-hover;
+    }
+
+    &:active {
+      background-color: $blue-active;
+    }
+
+    @include sm-mobile {
+      @include minmax(7rem, 2.5rem);
+    }
+
+    @include mobile {
+      @include minmax(7rem, 2.5rem);
+    }
+
+    @include tablet {
+      @include minmax(7rem, 2.5rem);
+    }
+  }
+
+  &__lg {
+    &--warn {
+      background-color: $red;
+      &:hover {
+        background-color: $red-hover;
+      }
+      &:active {
+        background-color: $red-active;
+      }
+    }
+
+    @extend .button__sm;
+    @include minmax(13rem, 4rem);
+
+    @include mobile {
+      @include minmax(7rem, 2.5rem);
+    }
+
+    @include tablet {
+      @include minmax(7rem, 2.5rem);
+    }
+  }
+
+  &__short {
+    &--warn {
+      background-color: $red;
+      &:hover {
+        background-color: $red-hover;
+      }
+      &:active {
+        background-color: $red-active;
+      }
+    }
+
+    @extend .button__sm;
+    @include minmax(3rem, 3rem);
+  }
+
+  &__add{
+    @extend .button__sm;
+    @include minmax(4.5rem, 4.5rem);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0rem 8.5rem 4rem 0rem;
+
+    @include mobile {
+      @include minmax(2.5rem, 2.5rem);
+    }
+  }
+}

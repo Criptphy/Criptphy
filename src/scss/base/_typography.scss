@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  color: $white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+
+  @include sm-mobile {
+    font-size: 2rem;
+  }
+
+  @include mobile {
+    font-size: 2rem;
+  }
+
+  @include tablet {
+    font-size: 2rem;
+  }
+
+  @include laptop {
+    font-size: 2rem;
+  }
+
+  @include desktop {
+    font-size: 2.5rem;
+  }
+
+  @include lg-desktop {
+    font-size: 2.5rem;
+  }
+}
+
+.header__logo {
+  @extend h1;
+  font-size: 1.625rem;
+
+  @include sm-mobile {
+    font-size: 1rem;
+  }
+
+  @include mobile {
+    font-size: 1rem;
+  }
+
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+
+  @include mobile {
+    font-size: 1.5rem;
+  }
+
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.7rem;
+  text-align: center;
+
+  @include sm-mobile {
+    font-size: 1rem;
+  }
+
+  @include mobile {
+    font-size: 1rem;
+  }
+
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+
+  @include sm-mobile {
+    font-size: 0.9rem;
+  }
+
+  @include mobile {
+    font-size: 0.9rem;
+  }
+
+  @include tablet {
+    font-size: 0.9rem;
+  }
+}
+
+hr {
+  margin-top: 0.5rem;
+  width: 4rem;
+  height: 0.4rem;
+  border: none;
+  background-color: $dark-magenta;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s; 
+
+  &:hover {
+    cursor: pointer;
+    color: $white;
+  }
+
+  @include sm-mobile {
+    font-size: 0.8rem;   
+  }
+
+  @include mobile {
+    font-size: 0.8rem;   
+  }
+
+  @include tablet {
+    font-size: 0.8rem;   
+  }
+}
+
+p {
+  color: $white;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+
+  @include sm-mobile {
+    font-size: 0.8rem;
+  }
+
+  @include mobile {
+    font-size: 0.8rem;
+  }
+
+  @include tablet {
+    font-size: 0.8rem;
+  }
+}
+
+.p {
+  &--sm {
+    font-size: 1.563rem;
+  }
+
+  &--lg {
+    font-size: 1.5rem;
+  }
+
+  &--info {
+    color: $gray;
+    font-style: italic;
+
+    @include sm-mobile {
+      text-align: center;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+}
+
+i {
+  color: $white;
+}
+
+button {
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  @include sm-mobile {
+    font-size: 0.8rem;
+  }
+  
+  @include mobile {
+    font-size: 0.8rem;
+  }
+
+  @include tablet {
+    font-size: 0.8rem;
+  }
+}
+
+.card__info {
+  text-align: center;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    color: $gray;
+    font-size: 1rem;
+  }
+
+  a {
+    color: $blue;
+    font-size: 1rem;
+
+    &:hover {
+      color: $blue-hover;
+    }
+
+    &:active {
+      color: $blue-active;
+    }
+  }
+}
+
+input {
+  font-size: 1.25rem;
+
+  @include sm-mobile {
+    font-size: 1rem;
+  }
+
+  @include mobile {
+    font-size: 1rem;
+  }
+
+  @include tablet {
+    font-size: 1rem;
+  }
+}
