@@ -90,15 +90,6 @@
       justify-content: end;
     }
 
-    &--pin {
-      color: transparent;
-      position: absolute;
-
-      &::selection {
-        background: transparent;
-      }
-    }
-
     @include flex(auto, row, wrap);
     @include minmax(fit-content, 100%);
     align-items: center;

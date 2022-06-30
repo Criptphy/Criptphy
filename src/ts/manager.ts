@@ -42,12 +42,12 @@ export function manager() {
 
     
   // copy btn
-  const btnCopy = document.querySelectorAll('.copy') as NodeListOf<HTMLElement>;
-  const value = document.querySelectorAll('.value') as NodeListOf<HTMLElement>;
+  const btnCopy = document.querySelectorAll('.copy') as NodeListOf<HTMLAnchorElement>;
+  const value = document.querySelectorAll('.value') as NodeListOf<HTMLInputElement>;
   
   for (let i = 0; i < btnCopy.length; i++) {
     btnCopy[i].addEventListener('click', () => {
-      navigator.clipboard.writeText(value[i].innerText);
+      navigator.clipboard.writeText(value[i].defaultValue);
     })
   }
 }
