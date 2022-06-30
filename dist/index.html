@@ -22,9 +22,9 @@
     <title>Criptphy - Gerenciador de senhas</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script type="module" crossorigin src="/assets/style.329fa817.js"></script>
-    <script type="module" crossorigin src="/assets/main.dcd76c04.js"></script>
-    <link rel="stylesheet" href="/assets/style.4a5d9c53.css">
+    <script type="module" crossorigin src="assets/style.329fa817.js"></script>
+    <script type="module" crossorigin src="assets/main.dcd76c04.js"></script>
+    <link rel="stylesheet" href="assets/style.4a5d9c53.css">
   </head>
   <body>
     <header>
@@ -194,7 +194,7 @@
                 <i class="ri-arrow-right-s-line ri-2x"></i>
               </nav>
               <div class="question__content">
-                <p>Atualmente a startup é mantido por anúncios e doações. Temos também um plano premium que oferece recursos extras, como, alerta de vazamento, salvamento amplo e um serviço de vpn integrada. Por sermos open-source, há também a possibilidade de apoiar diretamente no desenvolvimento, reportando bugs ou sugerindo melhorias e/ou recursos.</p>
+                <p>Atualmente a startup é mantido por anúncios. Temos também um plano premium que oferece recursos extras, como, alerta de vazamento, salvamento amplo e um serviço de vpn integrada. Por sermos open-source, há também a possibilidade de apoiar diretamente no desenvolvimento, reportando bugs ou sugerindo melhorias e/ou recursos.</p>
               </div>
             </div>
           </div>
@@ -241,14 +241,14 @@
           </div>
           <div class="modal__content modal__content--img" id="singup__img"></div>
           <div class="modal__content">
-            <form action="" method="post">
-              <input type="text" name="user" id="user" placeholder="Nome de usuário">
-              <input type="email" name="email" id="email" placeholder="E-mail">
-              <input type="password" name="password" id="password" placeholder="Senha">
+            <form action="src/php/cad.php" method="post">
+              <input type="text" id="user" placeholder="Nome de usuário" name="nome_user">
+              <input type="email" id="email" placeholder="E-mail" name="email_user">
+              <input type="password" id="password" placeholder="Senha" name="senha_user">
               <p id="check">8 caractéres, letra maiúscula, número e símbolo.</p>
               <input type="password" name="checkPassword" id="checkPassword" placeholder="Confirmar senha">
               <button class="button__lg" id="btnSingUp"><i class="ri-user-line ri-lg"></i>Criar conta</button>
-              <p>Ao se cadastrar você concorda com nossos <a href="/src/page/legal.html" target="_blank" rel="noopener noreferrer">Termos de Serviço</a> e <a href="/src/page/legal.html" target="_blank" rel="noopener noreferrer">Políticas de Privacidade.</a></p>
+              <p>Ao se cadastrar você concorda com nossos <a href="src/page/legal.html" target="_blank" rel="noopener noreferrer">Termos de Serviço</a> e <a href="/src/page/legal.html" target="_blank" rel="noopener noreferrer">Políticas de Privacidade.</a></p>
             </form>
           </div>
         </div>
@@ -262,9 +262,9 @@
           </div>
           <div class="modal__content modal__content--img" id="login__img"></div>
           <div class="modal__content">
-            <form action="" method="post">
-              <input type="text" name="userLogin" id="userLogin" placeholder="Nome de usuário ou e-mail">
-              <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Senha">
+            <form action="src/php/login.php" method="post">
+              <input type="text" name="login" id="userLogin" placeholder="Nome de usuário ou e-mail">
+              <input type="password" name="password" id="passwordLogin" placeholder="Senha">
               <button type="submit" class="button__lg"><i class="ri-door-line ri-lg"></i>Entrar</button>
             </form>
           </div>
