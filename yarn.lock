@@ -232,6 +232,21 @@ picocolors@^1.0.0:
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
   integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
+plugin@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/plugin/-/plugin-0.3.3.tgz#09140a624f1754db3a833611a988ca6e474eeee1"
+  integrity sha512-iYStLjk2ROAxvOmC5pAuF6Bl+0LI5BGaJLReXNQkJDTuGd0ytohluSf/EE2iFaej2AdV0llOyBW/BWrLRkOqTg==
+  dependencies:
+    async "0.1.x"
+    dref "0.0.x"
+    outcome "0.0.x"
+    resolve "0.2.x"
+    sift "0.0.x"
+    step "0.0.x"
+    structr "0.2.x"
+    toarray "0.0.x"
+    underscore "1.4.x"
+
 postcss@^8.4.13:
   version "8.4.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.14.tgz#ee9274d5622b4858c1007a74d76e42e56fd21caf"
@@ -329,10 +344,10 @@ underscore@1.4.x:
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
   integrity sha512-ZqGrAgaqqZM7LGRzNjLnw5elevWb5M8LEoDMadxIW3OWbcv72wMMgKdwOKpd5Fqxe8choLD8HN3iSj3TUh/giQ==
 
-vite@^2.9.9:
-  version "2.9.12"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.9.12.tgz#b1d636b0a8ac636afe9d83e3792d4895509a941b"
-  integrity sha512-suxC36dQo9Rq1qMB2qiRorNJtJAdxguu5TMvBHOc/F370KvqAe9t48vYp+/TbPKRNrMh/J55tOUmkuIqstZaew==
+vite@^2.9.13:
+  version "2.9.13"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.9.13.tgz#859cb5d4c316c0d8c6ec9866045c0f7858ca6abc"
+  integrity sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==
   dependencies:
     esbuild "^0.14.27"
     postcss "^8.4.13"
